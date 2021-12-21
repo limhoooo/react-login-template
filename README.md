@@ -27,7 +27,6 @@ package.json script 에 <br>
 "backend": "nodemon index.js" 추가 <br>
 // backend 는 원하는대로 적어도됨
 
-
 ## git
 https://git-scm.com/ <br>
 
