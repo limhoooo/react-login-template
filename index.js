@@ -2,15 +2,16 @@ const express = require('express');
 const app = express();
 const port = 5000;
 const bodyParser = require('body-parser');
-const mongoURL = 'mongodb+srv://limhoooo:dlagh12@template.fszzg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const mongoURL = ''
 const mongoose = require('mongoose')
+const config = require('./config/key')
 const { User } = require('./models/user');
 
 // application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-mongoose.connect(mongoURL, {
+mongoose.connect(config.mongoURL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     // useCreateIndex: true,
