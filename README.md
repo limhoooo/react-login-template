@@ -48,3 +48,6 @@ git commit -m " 처음 저장소에 올림 "
 ### key.js 생성
 dev.js 와 prod.js 에 몽고디비 정보 기입 <br>
 gitignore 에서 예외처리
+
+#### bcrypt 다운로드
+$ npm i bcrypt --save
