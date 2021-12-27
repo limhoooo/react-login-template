@@ -51,3 +51,10 @@ gitignore 에서 예외처리
 
 #### bcrypt 다운로드
 $ npm i bcrypt --save
+
+#### json web token
+$ npm i jsonwebtoken --save <br>
+https://www.npmjs.com/package/jsonwebtoken
+
+#### cookie parser
+$ npm i cookie-parser --save
