@@ -5,9 +5,9 @@ const bodyParser = require('body-parser');
 const mongoURL = ''
 const mongoose = require('mongoose')
 const cookieParse = require('cookie-parser')
-const config = require('./config/key')
-const { auth } = require('./middleware/auth')
-const { User } = require('./models/user');
+const config = require('./server/config/key')
+const { auth } = require('./server/middleware/auth')
+const { User } = require('./server/models/user');
 
 // application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -99,5 +99,7 @@ app.get('/api/user/logout', auth, (req, res) => {
         }
     )
 })
-
+app.get('/api/hello', (req, res) => {
+    res.send("안녕하세요 ~")
+})
 app.listen(port, () => console.log(`Example app listening on port ${port}`));

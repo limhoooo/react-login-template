@@ -58,3 +58,33 @@ https://www.npmjs.com/package/jsonwebtoken
 
 #### cookie parser
 $ npm i cookie-parser --save
+
+#### react
+$ npx create-react-app <project-name>
+
+#### react-router-dom
+$ npm i react-router-dom --save
+
+#### axios
+$ npm axios --
+
+#### CORS (프록시설정)
+https://create-react-app.dev/docs/proxying-api-requests-in-development/
+$ npm install http-proxy-middleware --save
+
+#### front back server 한번 켜기ㅋ
+$ npm i concurrently --save <br>
+
+package.json 에 <br>
+"dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
+
+#### css 프레임웤크
+Ant Design <br>
+https://ant.design/ <br>
+$ npm i antd --sava
+
+#### redux 설치
+$ npm i redux react-redux redux-promise redux-thunk --sava <br>
+redux-promise : redux state 에 promise 형태의 값을 받을 수 있게해줌 <br>
+redux-thunk : redux state 에 Function 형태의 값을 받을 수 있게해줌 <br>
+크롬확장프로그램 redux extension 설치
