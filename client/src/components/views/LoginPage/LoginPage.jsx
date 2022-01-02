@@ -9,6 +9,7 @@ const LoginPage = (props) => {
     const [Password, setPassword] = useState('');
     const onEmailHandler = (e) => {
 
+
         setEmail(e.currentTarget.value)
     }
     const onPasswordHandler = (e) => {
