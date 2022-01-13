@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { LOGIN_USER, REGISTER_USER, LOGOUT_USER, AUTH_USER } from './types'
 export function loginUser(dataToSubmit) {
-    const request = axios.post('/api/user/login', dataToSubmit)
+    const request = axios.post('/api/user/fetchProblem', dataToSubmit)
         .then(res => res.data)
 
     return {
